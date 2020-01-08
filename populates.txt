@@ -1,0 +1,21 @@
+INSERT INTO car (car_qr, car_reserved)
+ VALUES ("858123HAS76UGI", 0);
+
+INSERT INTO category (cat_name)
+ VALUES ("Fraldas");
+
+INSERT INTO history (hist_id_car, hist_id_user, hist_date, hist_bit)
+ VALUES (1,1, str_to_date('19.12.2019', '%d.%m.%Y'), 1);
+
+
+INSERT INTO historyproducts (histprod_user, histprod_prod)
+ VALUES (1,1);
+
+INSERT INTO locationcar (localcar_id_car, localcar_lat, localcar_lon, localcar_date)
+ VALUES (1, "1234", "1009", str_to_date('19.12.2019', '%d.%m.%Y'));
+
+INSERT INTO locationuser (localuser_id_user, localuser_lat, localuser_lon, localuser_date)
+ VALUES (1, "1235", "1008", str_to_date('19.12.2019', '%d.%m.%Y'));
+
+INSERT INTO products (prod_name, prod_price, prod_id_category)
+ VALUES ("Fraldas Chelino Nature", 18, 1);
